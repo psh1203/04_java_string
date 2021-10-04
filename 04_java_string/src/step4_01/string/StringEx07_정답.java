@@ -21,8 +21,7 @@ public class StringEx07_정답 {
 			part2 = part1[i].split("/");//김철수  87  이만수  42  이영희  95
 			name[i] = part2[0]; //name[ 0 1 2 ] =
 			score[i] = Integer.parseInt(part2[1]);
-//			System.out.println(part2[0]);
-//			System.out.println(part2[1]);
+
 		}
 	
 		for(int i=0; i<3; i++) {
