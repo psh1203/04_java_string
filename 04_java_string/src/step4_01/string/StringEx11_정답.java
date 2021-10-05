@@ -51,7 +51,7 @@ public class StringEx11_정답 {
 			
 			System.out.println(Arrays.toString(cate));
 			System.out.println(Arrays.toString(itm));
-			System.out.println(Arrays.toString(items));
+			//System.out.println(Arrays.toString(items));
 			System.out.println("================");
 			
 			System.out.println("[관리자 모드]");
@@ -105,23 +105,26 @@ public class StringEx11_정답 {
 						
 						itm[itemCount] = name2; // item 추가
 						
+						temp = null;
+						itemCount++;
 						//카테고리랑 연결
 //				 		{"과자", "홈런볼/쪼리퐁/"},
 //						items = new String[100][2];
-						for(int j=0; j<items.length; j++) {
+						for(int j=0; j<itemCount; j++) {
+							
 							items[j][0] = cate[i]; //카테고리 cate[i]
 							
 							for(int k=0; k<itemCount; k++) {
 								itmMenu += itm[k]+"/"; //아이템목록 문자열화
 							}
 
-							items[j][1] = itmMenu; 
+							items[j][1] = itmMenu;
 							
+							System.out.print(items[j][0] + ", ");
+							System.out.print(items[j][1]);
 							  
 						}							
-						
-						temp = null;
-						itemCount++;
+
 					}
 					
 				}
