@@ -28,6 +28,16 @@ public class StringEx04 {
 		String str3 = String.valueOf(nNum);
 		System.out.println(str3+1);
 		
+		System.out.println();
+		
+		// 참고) 구글에서 ASCII코드표 검색 (65 : 'A' , 97: 'a' 상식으로 암기)
+		char ch1 = 'a';
+		int n1 = (int)ch1;
+		System.out.println(ch1 + " / " + n1);
+		System.out.println();
+		
+		
+		
 		
 		
 	}

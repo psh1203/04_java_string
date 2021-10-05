@@ -78,6 +78,22 @@ public class StringEx03 {
 		}
 		System.out.println();			
 		
+		System.out.println();
+		
+		// 5) 문자열 비교 : compareTo()
+		str1 = "ac"; //0 1 2 3 4
+		str2 = "ec"; //a b c d e....
+		str3 = "ac";
+		
+		// 왼쪽값(기준값)이 작을 경우 음수
+		System.out.println(str1.compareTo(str2));
+		
+		// 왼쪽값(기준값)이 클 경우 양수
+		System.out.println(str2.compareTo(str1));
+		
+		// 양쪽값이 같은 경우 0
+		System.out.println(str1.compareTo(str3));
+		
 		
 	}
 
