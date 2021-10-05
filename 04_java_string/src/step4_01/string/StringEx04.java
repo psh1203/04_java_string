@@ -36,9 +36,13 @@ public class StringEx04 {
 		System.out.println(ch1 + " / " + n1);
 		System.out.println();
 		
+		// 숫자 > 문자
+		int n2 = 100;
+		char ch2 = (char)n2;
+		System.out.println(n2 + " / " + ch2);
 		
-		
-		
+		System.out.println((int)'s' + 3); //118
+		System.out.println((char)(n2 + 3)); //g
 		
 	}
 
