@@ -86,13 +86,13 @@ public class StringEx03 {
 		str3 = "ac";
 		
 		// 왼쪽값(기준값)이 작을 경우 음수
-		System.out.println(str1.compareTo(str2));
+		System.out.println(str1.compareTo(str2));  //02 . 42
 		
 		// 왼쪽값(기준값)이 클 경우 양수
-		System.out.println(str2.compareTo(str1));
+		System.out.println(str2.compareTo(str1)); //42 . 02
 		
 		// 양쪽값이 같은 경우 0
-		System.out.println(str1.compareTo(str3));
+		System.out.println(str1.compareTo(str3));	//02 . 02
 		
 		
 	}
