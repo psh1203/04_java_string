@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /*
  * # 문자열 비교
- * 
+ * equals X
+ * 문자 길이로 비교.
  * 예)
  * 코끼리
  * 입력 = 티라노사우루스
