@@ -2,7 +2,7 @@ package step4_01.string;
 
 import java.util.Arrays;
 
-//2021-10-06 2:52 ~ 
+//2021-10-06 2:52 ~ 2021-11-04 5:18
 // # 정렬 (사전순으로 정렬해 보시오.)
 
 public class StringEx13_정답 {
@@ -13,7 +13,6 @@ public class StringEx13_정답 {
 
 		int cnt = 0; //회전 횟수
 		String[] newName = new String[5];
-		
 		String txt = "";
 		int true1 = 0;
 		int true2 = 5;
@@ -39,15 +38,23 @@ public class StringEx13_정답 {
 			newName[true1++] = names[j];
 			names[j] = " ";
 
-			//사전 순
-			
 		}
 		
-		for(int i=4; i<newName.length; i--) {
-			//newName[i] = names[j];
-		}		
+//		//사전 순 단순 출력
+//		for(int i=newName.length-1; i > -1; i--) {
+//			System.out.print(newName[i] + " ");
+//		}
+		
+		//정렬로 값에 넣기
+		String[] temp = newName;
+		newName = new String[temp.length];
+				
+		int j=0;
+		for(int i=temp.length-1; i > -1; i--) {
+			newName[j++] = temp[i];
+		}
+		
 		System.out.println(Arrays.toString(newName));
-		//System.out.println(txt);
 		
 	}
 
